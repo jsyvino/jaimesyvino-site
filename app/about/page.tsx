@@ -36,7 +36,30 @@ export default function AboutPage() {
 
       <div className="mt-10">
         <Disclosure summary={originStory.teaser}>
-          <p>{originStory.paragraph}</p>
+          <div className="flex flex-col gap-4">
+            <p>{originStory.paragraph}</p>
+            <blockquote className="border-l-2 border-black/20 pl-4 italic text-black/70 dark:border-white/20 dark:text-white/70">
+              &ldquo;{originStory.quote}&rdquo;
+              <span className="mt-1 block text-sm not-italic text-black/50 dark:text-white/50">
+                — {originStory.quoteAttribution}
+              </span>
+            </blockquote>
+            <p>{originStory.closingLine}</p>
+            <ul className="flex flex-col gap-1 text-sm">
+              {originStory.externalLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-4 hover:no-underline"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </Disclosure>
       </div>
     </div>
