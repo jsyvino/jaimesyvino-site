@@ -1,0 +1,55 @@
+export const siteConfig = {
+  name: "Jaime Syvino",
+  pronouns: "she/her",
+  tagline: "Experienced Engineering Leader",
+  subLine: "I lead teams, and I still write the code.",
+  location: "New Paltz, NY (Remote)",
+  email: "JSyvino@gmail.com",
+  currentRole: {
+    title: "Engineering Manager",
+    company: "MagicSchool AI",
+    blurb:
+      "I currently lead an engineering team at MagicSchool AI, an AI-native edtech platform used by 7M+ educators.",
+  },
+  links: {
+    linkedin: "https://www.linkedin.com/in/jaime-syvino-engineer/",
+    github: "https://github.com/jsyvino",
+    resume: "/resume/Jaime-Syvino-Resume.pdf",
+  },
+  nav: [
+    { label: "About", href: "/about" },
+  ],
+  careerStats: [
+    { value: "7M+", label: "educators reached", sublabel: "MagicSchool AI" },
+    { value: "$150K+", label: "in shipped annual savings" },
+    { value: "3", label: "companies, one throughline", sublabel: "ship, measure, lead" },
+  ],
+  skills: {
+    technical: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Node.js",
+      "LLM Integration",
+      "Python / Django",
+      "PostgreSQL",
+      "Supabase",
+      "BigQuery",
+      "ElasticSearch",
+      "AWS",
+      "A/B Testing",
+      "Datadog",
+      "Vercel",
+      "Storybook",
+    ],
+    leadership: [
+      "Hiring",
+      "Servant Leadership",
+      "Cross-functional Alignment",
+      "Mentorship",
+      "Building Psychological Safety",
+      "Decisive Ownership",
+    ],
+  },
+};
