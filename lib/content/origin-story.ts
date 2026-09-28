@@ -8,9 +8,9 @@ export const originStory = {
   closingLine:
     "The instinct from that first career never left: find the systemic root cause, not the quick patch, and measure whether the fix actually worked.",
   image: {
-    src: "/images/about/tank-farm-drawing.png",
-    alt: "A structural piping and tank layout drawing for a lube oil blend facility tank farm, with tanks labeled by product code",
-    caption: "A tank farm layout she led at Safety-Kleen's East Chicago facility.",
+    src: "/images/about/pfd-diagram.png",
+    alt: "A process flow diagram for a coker distillate upgrade unit, showing reactors, distillation columns, heat exchangers, and flow paths",
+    caption: "A process flow diagram from her senior design project at Cornell.",
   },
   externalLinks: [
     { label: "Read: the press announcement on the Komori project", href: "https://www.nosco.com/news/new-komori-2017" },

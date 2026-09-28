@@ -63,8 +63,8 @@ export default function AboutPage() {
               <Image
                 src={originStory.image.src}
                 alt={originStory.image.alt}
-                width={1600}
-                height={1035}
+                width={1435}
+                height={965}
                 className="w-full rounded-xl border border-black/10 dark:border-white/10"
               />
               <figcaption className="mt-2 text-xs text-black/45 dark:text-white/45">
