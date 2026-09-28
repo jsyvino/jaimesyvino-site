@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Disclosure } from "@/components/Disclosure";
 import { SkillsStrip } from "@/components/SkillsStrip";
 import { originStory } from "@/lib/content/origin-story";
@@ -45,6 +46,18 @@ export default function AboutPage() {
               </span>
             </blockquote>
             <p>{originStory.closingLine}</p>
+            <figure>
+              <Image
+                src={originStory.image.src}
+                alt={originStory.image.alt}
+                width={1200}
+                height={900}
+                className="w-full rounded-xl border border-black/10 dark:border-white/10"
+              />
+              <figcaption className="mt-2 text-xs text-black/45 dark:text-white/45">
+                {originStory.image.caption}
+              </figcaption>
+            </figure>
             <ul className="flex flex-col gap-1 text-sm">
               {originStory.externalLinks.map((link) => (
                 <li key={link.href}>
