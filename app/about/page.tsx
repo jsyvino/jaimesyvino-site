@@ -3,8 +3,10 @@ import Image from "next/image";
 import { Disclosure } from "@/components/Disclosure";
 import { SkillsStrip } from "@/components/SkillsStrip";
 import { FunFacts } from "@/components/FunFacts";
+import { LeadershipPrinciples } from "@/components/LeadershipPrinciples";
 import { originStory } from "@/lib/content/origin-story";
 import { funFacts } from "@/lib/content/fun-facts";
+import { leadershipPrinciples } from "@/lib/content/leadership-principles";
 import { siteConfig } from "@/lib/content/site-config";
 
 export const metadata: Metadata = {
@@ -32,6 +34,15 @@ export default function AboutPage() {
         </p>
       </div>
 
+      <div className="mt-10">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-black/45 dark:text-white/45">
+          How I lead
+        </h2>
+        <div className="mt-4">
+          <LeadershipPrinciples principles={leadershipPrinciples} />
+        </div>
+      </div>
+
       <div className="mt-10 flex flex-col gap-8 sm:flex-row sm:gap-16">
         <SkillsStrip title="Technical" skills={siteConfig.skills.technical} />
         <SkillsStrip title="Leadership" skills={siteConfig.skills.leadership} />
@@ -52,8 +63,8 @@ export default function AboutPage() {
               <Image
                 src={originStory.image.src}
                 alt={originStory.image.alt}
-                width={1200}
-                height={900}
+                width={1600}
+                height={1035}
                 className="w-full rounded-xl border border-black/10 dark:border-white/10"
               />
               <figcaption className="mt-2 text-xs text-black/45 dark:text-white/45">

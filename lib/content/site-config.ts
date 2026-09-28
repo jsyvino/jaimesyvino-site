@@ -18,8 +18,8 @@ export const siteConfig = {
     { label: "About", href: "/about" },
   ],
   careerStats: [
-    { value: "7M+", label: "educators reached", sublabel: "MagicSchool AI" },
-    { value: "$150K+", label: "in shipped annual savings" },
+    { value: "8+", label: "years shipping software" },
+    { value: "9", label: "engineers led at once", sublabel: "at peak" },
     { value: "3", label: "companies, one throughline", sublabel: "ship, measure, lead" },
   ],
   skills: {
