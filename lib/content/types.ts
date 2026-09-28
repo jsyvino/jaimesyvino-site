@@ -17,7 +17,7 @@ export interface ExternalLink {
 
 export interface CaseStudy {
   slug: string;
-  priority: 1 | 2 | 3;
+  priority: 1 | 2 | 3 | 4;
   company: string;
   companyBlurb: string;
   roleTitle: string;

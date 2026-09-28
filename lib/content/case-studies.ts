@@ -114,4 +114,47 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
   },
+  {
+    slug: "hall-monitor",
+    priority: 4,
+    company: "Hall Monitor (personal project)",
+    companyBlurb: "Solo-built internal tool for MagicSchool AI's engineering org",
+    roleTitle: "Creator & sole engineer",
+    dateRange: "2026",
+    hook: "Built the tool that replaced a manual weekly reporting scramble with an automatic org-wide rollup for the VP of Engineering — and the CEO.",
+    heroStats: [
+      { value: "14", label: "squads covered", sublabel: "org-wide" },
+      { value: "Solo", label: "built end-to-end", sublabel: "outside any assigned project" },
+      { value: "Weekdays, 5am ET", label: "fully automated cadence" },
+    ],
+    narrative: {
+      problem:
+        "Every week, the completed work across MagicSchool's roughly 14 engineering squads had to get manually compiled into updates for the VP of Engineering's Monday all-hands and periodic executive briefings. It was a recurring chore for EMs, it got less reliable as the org reorganized repeatedly, and leadership still didn't have a dependable, org-wide view of what had actually shipped.",
+      approach:
+        "On my own initiative, outside any assigned project, I built a tool — internally called Hall Monitor — that pulls completed issues from Linear and standup threads from Slack for every squad, has Claude synthesize a per-squad narrative plus an org-wide executive rollup, and posts both to Slack automatically. I layered on a nightly Google Drive and Notion scan that links relevant docs to the right project, so summaries have more context than ticket titles alone, plus a dedicated weekly release-notes generator for the VP of Engineering's Monday all-hands.",
+    },
+    technicalCall: {
+      title: "Finding the silent break in a pipeline that looked fine",
+      body: "The fetch step was correctly pulling and grouping completed issues by project, but the render step's prompt to Claude wasn't getting that grouping, because a separate “active projects” query was silently returning nothing. Both queries used the same-looking `team` argument, but Linear's own schema wants different types for each: `issues(filter: { team: { id } })` expects `ID!`, while the `team(id:)` resolver expects `String!`. One query looked fine, the other was quietly broken by a one-character type mismatch. I also replaced a hardcoded per-squad config block in the script with a `squads.json` file, so the squad list can change — which it does, often — without touching code.",
+    },
+    leadershipFraming: {
+      team: "Solo — built and maintained outside of any assigned project",
+      scope: "Org-wide engineering reporting: per-squad digests plus an executive rollup, across ~14 squads",
+      stakeholders: "Every EM/squad lead who no longer hand-writes a weekly update, the VP of Engineering, and executive leadership",
+    },
+    outcomeStats: [
+      { value: "14", label: "squads reporting automatically" },
+      { value: "0", label: "manual squad write-ups", sublabel: "replaced by automation" },
+      { value: "3", label: "data sources unified", sublabel: "Linear, Slack, Drive/Notion" },
+      { value: "Weekly", label: "VP of Engineering all-hands slide", sublabel: "auto-generated" },
+    ],
+    stack: ["Python", "Linear API (GraphQL)", "Slack API", "Claude API", "Google Drive API", "Notion API"],
+    media: [
+      {
+        src: "/images/case-studies/hall-monitor/admin-dashboard.png",
+        alt: "Hall Monitor admin dashboard showing Slack channel mappings, a nightly Drive and Notion document scan, and controls for auto-generated project summaries and executive briefings",
+        caption: "The admin dashboard used to configure squad-to-Slack mappings and trigger or review auto-generated summaries.",
+      },
+    ],
+  },
 ];
