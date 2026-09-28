@@ -5,11 +5,9 @@ export const siteConfig = {
   subLine: "I lead teams, and I still write the code.",
   location: "New Paltz, NY (Remote)",
   email: "JSyvino@gmail.com",
-  currentRole: {
-    title: "Engineering Manager",
-    company: "MagicSchool AI",
+  summary: {
     blurb:
-      "I currently lead an engineering team at MagicSchool AI, an AI-native edtech platform used by 7M+ educators.",
+      "I'm an engineering leader who has spent the last several years building and scaling product engineering teams — most recently across AI-native edtech, sustainability data, and enterprise SaaS.",
   },
   links: {
     linkedin: "https://www.linkedin.com/in/jaime-syvino-engineer/",

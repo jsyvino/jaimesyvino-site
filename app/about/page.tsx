@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/content/site-config";
 
 export const metadata: Metadata = {
   title: `About — ${siteConfig.name}`,
-  description: siteConfig.currentRole.blurb,
+  description: siteConfig.summary.blurb,
 };
 
 export default function AboutPage() {
@@ -16,7 +16,7 @@ export default function AboutPage() {
       <h1 className="text-3xl font-semibold tracking-tight">About</h1>
 
       <div className="mt-6 flex flex-col gap-4 text-base leading-relaxed text-black/80 dark:text-white/80">
-        <p>{siteConfig.currentRole.blurb}</p>
+        <p>{siteConfig.summary.blurb}</p>
         <p>
           Across MagicSchool AI, HowGood, and KnowledgeHound, the pattern has stayed the same: find the
           highest-leverage problem, build the smallest thing that actually solves it, measure whether it

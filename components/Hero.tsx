@@ -21,7 +21,7 @@ export function Hero() {
           {siteConfig.subLine}
         </p>
         <p className="mt-1 text-sm text-black/45 dark:text-white/45">
-          {siteConfig.currentRole.title}, {siteConfig.currentRole.company} · {siteConfig.location} ({siteConfig.pronouns})
+          {siteConfig.location} ({siteConfig.pronouns})
         </p>
       </div>
       <StatChipRow stats={siteConfig.careerStats} />
