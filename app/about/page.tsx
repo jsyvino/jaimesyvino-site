@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Disclosure } from "@/components/Disclosure";
 import { SkillsStrip } from "@/components/SkillsStrip";
+import { FunFacts } from "@/components/FunFacts";
 import { originStory } from "@/lib/content/origin-story";
+import { funFacts } from "@/lib/content/fun-facts";
 import { siteConfig } from "@/lib/content/site-config";
 
 export const metadata: Metadata = {
@@ -73,6 +75,12 @@ export default function AboutPage() {
               ))}
             </ul>
           </div>
+        </Disclosure>
+      </div>
+
+      <div className="mt-4">
+        <Disclosure summary="A few fun facts">
+          <FunFacts facts={funFacts} />
         </Disclosure>
       </div>
     </div>
