@@ -1,9 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { CaseStudyCard } from "@/components/CaseStudyCard";
-import { OtherWorkList } from "@/components/OtherWorkList";
 import { SkillsStrip } from "@/components/SkillsStrip";
 import { caseStudies } from "@/lib/content/case-studies";
-import { otherWork } from "@/lib/content/other-work";
 import { siteConfig } from "@/lib/content/site-config";
 
 export default function Home() {
@@ -21,15 +19,6 @@ export default function Home() {
           {sortedCaseStudies.map((caseStudy) => (
             <CaseStudyCard key={caseStudy.slug} caseStudy={caseStudy} />
           ))}
-        </div>
-      </section>
-
-      <section className="py-12">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-black/45 dark:text-white/45">
-          Other work
-        </h2>
-        <div className="mt-4">
-          <OtherWorkList items={otherWork} />
         </div>
       </section>
 

@@ -17,16 +17,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jaimesyvino.vercel.app"),
-  title: `${siteConfig.name} — ${siteConfig.tagline}`,
+  title: `${siteConfig.name} | ${siteConfig.tagline}`,
   description: siteConfig.subLine,
   openGraph: {
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.subLine,
     images: ["/images/headshot.jpg"],
   },
   twitter: {
     card: "summary",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.subLine,
     images: ["/images/headshot.jpg"],
   },

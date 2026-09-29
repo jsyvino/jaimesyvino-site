@@ -5,7 +5,7 @@ import { caseStudies } from "@/lib/content/case-studies";
 const caseStudy = caseStudies.find((cs) => cs.slug === "knowledgehound-rapid-reports")!;
 
 export const metadata: Metadata = {
-  title: `${caseStudy.company} — ${caseStudy.hook}`,
+  title: `${caseStudy.company} | ${caseStudy.hook}`,
   description: caseStudy.hook,
 };
 

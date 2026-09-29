@@ -26,11 +26,11 @@ export const experience: ExperienceSection[] = [
         dateRange: "Mar 2026 – Present",
         subtitle: "AI-native edtech platform · 7M+ educators",
         bullets: [
-          "Led launch of a personalized recommendations engine for 7M+ educators, replacing 4 static tool suggestions with 9 subject-ranked ones — 23% CTR and 78% click-to-use conversion among new users.",
+          "Led launch of a personalized recommendations engine for 7M+ educators, replacing 4 static tool suggestions with 9 subject-ranked ones, resulting in 23% CTR and 78% click-to-use conversion among new users.",
           "Led a multi-phase quality initiative on Raina's clarifying-question behavior and response verbosity, using a dedicated eval harness to validate prompt changes before they shipped.",
           "Built and applied a cross-platform (Linear/GitHub) engineering activity model to inform EPD squad consolidation following a significant, multi-person leadership departure.",
           "Owned technical delivery of Unified Enterprise Tools, consolidating three fragmented admin surfaces (tool access, org tools, district settings) into a single interface.",
-          "Led per-user, per-grade/subject tool access management for MagicStudent — replacing an all-or-nothing access model with granular controls for district admins.",
+          "Led per-user, per-grade/subject tool access management for MagicStudent, replacing an all-or-nothing access model with granular controls for district admins.",
           "Build psychological safety and inclusive team culture; servant-leader approach focused on knowing individual strengths and challenging each engineer to grow.",
         ],
       },
@@ -49,7 +49,7 @@ export const experience: ExperienceSection[] = [
         dateRange: "Sep 2024 – Jul 2025",
         bullets: [
           "Promoted to Tech Lead within one month; led on-time Back to School delivery with admin tooling, onboarding, and Schoology/Canvas integrations while absorbing added scope mid-project and keeping team morale strong.",
-          "Championed creation of a dedicated Design System team — advocated for the investment, resulting in 3 dedicated engineers and a full initiative to build standardized shared UI components.",
+          "Championed creation of a dedicated Design System team, advocating for the investment and resulting in 3 dedicated engineers and a full initiative to build standardized shared UI components.",
         ],
       },
     ],
@@ -118,7 +118,7 @@ export const experience: ExperienceSection[] = [
   },
   {
     slug: "earlier-career",
-    heading: "Earlier career — process & production engineering",
+    heading: "Earlier career: process & production engineering",
     defaultOpen: false,
     roles: [
       {
@@ -166,7 +166,7 @@ export const experience: ExperienceSection[] = [
           "Responsible for all maintenance, troubleshooting, and programming of the facility's Honeywell distributed control system and Allen Bradley programmable logic computers.",
           "Hiring and direct manager of the Cooperative Engineering department.",
           "Project manager of multiple capital projects with budgets up to $2.5MM.",
-          "Developed an Alarm Management Program and implemented a rationalization plan for continuous improvement and effectiveness of operations alarms — 83% reduction in standing alarms, 37% reduction in alarm rate.",
+          "Developed an Alarm Management Program and implemented a rationalization plan for continuous improvement and effectiveness of operations alarms, resulting in an 83% reduction in standing alarms and a 37% reduction in alarm rate.",
           "Eliminated compliance violations of SO2 emissions through an automated, proactive monitoring program utilizing the distributed control system.",
           "Led commissioning of a newly installed $15MM blend plant with brand new programmable logic computers and Wonderware human-machine interface.",
         ],

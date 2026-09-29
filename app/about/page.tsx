@@ -10,7 +10,7 @@ import { leadershipPrinciples } from "@/lib/content/leadership-principles";
 import { siteConfig } from "@/lib/content/site-config";
 
 export const metadata: Metadata = {
-  title: `About — ${siteConfig.name}`,
+  title: `About | ${siteConfig.name}`,
   description: siteConfig.summary.blurb,
 };
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
           Across MagicSchool AI, HowGood, and KnowledgeHound, the pattern has stayed the same: find the
           highest-leverage problem, build the smallest thing that actually solves it, measure whether it
           worked, and bring the team along the whole way. I care about being decisive without being
-          territorial — a squad works best when the right call gets made quickly and everyone understands why.
+          territorial. A squad works best when the right call gets made quickly and everyone understands why.
         </p>
         <p>
           I&apos;m equally at home leading a team&apos;s roadmap and hiring, and being the person who opens
@@ -55,7 +55,7 @@ export default function AboutPage() {
             <blockquote className="border-l-2 border-black/20 pl-4 italic text-black/70 dark:border-white/20 dark:text-white/70">
               &ldquo;{originStory.quote}&rdquo;
               <span className="mt-1 block text-sm not-italic text-black/50 dark:text-white/50">
-                — {originStory.quoteAttribution}
+                - {originStory.quoteAttribution}
               </span>
             </blockquote>
             <p>{originStory.closingLine}</p>

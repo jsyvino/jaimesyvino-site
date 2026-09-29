@@ -6,7 +6,7 @@ export const caseStudies: CaseStudy[] = [
     priority: 1,
     company: "MagicSchool AI",
     companyBlurb: "AI-native edtech platform, 7M+ educators",
-    roleTitle: "Tech Lead, Staff Software Engineer — Growth",
+    roleTitle: "Tech Lead, Staff Software Engineer, Growth",
     dateRange: "2025",
     hook: "Built the admin-outreach engine that turned raw teacher usage data into MagicSchool's first product-led pipeline.",
     heroStats: [
@@ -18,7 +18,7 @@ export const caseStudies: CaseStudy[] = [
       problem:
         "Thousands of schools were using MagicSchool without a contract, but nobody had a systematic way to find the ones actually ready to buy, or to reach them with something more useful than a cold sales email. Separately, our tool-recommendation surface was a flat, unranked list of 4 suggestions, doing nothing to help teachers discover the tools most relevant to their subject.",
       approach:
-        "I led a small squad — a PM, three engineers, and a data scientist — to build a product-qualified-lead (PQL) engine end to end. We defined PQL criteria (three or more active teachers, a minimum generation threshold, no existing contract), built the data pipeline and weekly refresh job that scored schools against it, and shipped an admin-outreach landing page that surfaced a school's own aggregated usage data and testimonials back to them. On the recommendations side, I led the team that replaced the static 4-suggestion list with a subject-ranked set of 9 tools, personalized per teacher.",
+        "I led a small squad (a PM, three engineers, and a data scientist) to build a product-qualified-lead (PQL) engine end to end. We defined PQL criteria (three or more active teachers, a minimum generation threshold, no existing contract), built the data pipeline and weekly refresh job that scored schools against it, and shipped an admin-outreach landing page that surfaced a school's own aggregated usage data and testimonials back to them. On the recommendations side, I led the team that replaced the static 4-suggestion list with a subject-ranked set of 9 tools, personalized per teacher.",
     },
     technicalCall: {
       title: "Validating the pipeline before trusting it",
@@ -52,9 +52,9 @@ export const caseStudies: CaseStudy[] = [
     ],
     narrative: {
       problem:
-        "HowGood's procurement reporting page was pulling thousands of records and aggregating them client-side (and in Postgres) just to render 100 rows on screen. Loads regularly took 30 to 50 seconds, and sometimes timed out entirely — for the exact page enterprise customers relied on to evaluate suppliers.",
+        "HowGood's procurement reporting page was pulling thousands of records and aggregating them client-side (and in Postgres) just to render 100 rows on screen. Loads regularly took 30 to 50 seconds and sometimes timed out entirely, on the exact page enterprise customers relied on to evaluate suppliers.",
       approach:
-        "As the engineer who owned the platform's frontend foundations, I'd already led a broader push — a Redux Sagas to Redux Thunks migration, Sentry-based observability, and enforced TDD and pair programming across the team — that cut LCP 25% and bundle size 40% and improved cycle time 30% through tighter PM/engineering feedback loops. The procurement page needed something more targeted: I used Datadog to isolate exactly which endpoint was slow, then moved the aggregation off client-side/Postgres and onto an existing Elasticsearch mirror I hadn't previously worked with.",
+        "As the engineer who owned the platform's frontend foundations, I'd already led a broader push (a Redux Sagas to Redux Thunks migration, Sentry-based observability, and enforced TDD and pair programming across the team) that cut LCP 25% and bundle size 40% and improved cycle time 30% through tighter PM/engineering feedback loops. The procurement page needed something more targeted: I used Datadog to isolate exactly which endpoint was slow, then moved the aggregation off client-side/Postgres and onto an existing Elasticsearch mirror I hadn't previously worked with.",
     },
     technicalCall: {
       title: "Reusing infrastructure instead of building new",
@@ -80,20 +80,20 @@ export const caseStudies: CaseStudy[] = [
     companyBlurb: "Market research SaaS platform",
     roleTitle: "Lead Engineer",
     dateRange: "Jul 2018 – Jul 2022",
-    hook: "Shipped the largest-grossing upgrade feature in company history — and a same-week fix for the export format sales actually needed.",
+    hook: "Shipped the largest-grossing upgrade feature in company history, then delivered a same-week fix for the export format sales actually needed.",
     heroStats: [
       { value: "#1", label: "grossing upgrade feature", sublabel: "in company history" },
       { value: "2 days", label: "to prototype native PowerPoint export" },
     ],
     narrative: {
       problem:
-        "Rapid Reports let users build chart \"stories\" out of survey data inside The Hound, KnowledgeHound's core search-and-insights product. The initial export approach took a screenshot of the chart and dropped it into a PDF — but the customers who actually paid for this feature lived in PowerPoint, and a static image wasn't good enough.",
+        "Rapid Reports let users build chart \"stories\" out of survey data inside The Hound, KnowledgeHound's core search-and-insights product. The initial export approach took a screenshot of the chart and dropped it into a PDF, but the customers who actually paid for this feature lived in PowerPoint, and a static image wasn't good enough.",
       approach:
-        "I led the cross-functional team that shipped Rapid Reports as part of the largest-grossing upgrade feature in the company's history at that point, then owned the technical redesign of its export path. Rather than reimplement the frontend's chart-calculation logic a second time in Python for the export pipeline, I built a standalone Node/Express service that exposed that shared calculation logic as an npm package — consumed by both the React client and the Python-based export pipeline. I prototyped native PowerPoint export in 2 days, then brought on a second engineer to help ship it on the original deadline.",
+        "I led the cross-functional team that shipped Rapid Reports as part of the largest-grossing upgrade feature in the company's history at that point, then owned the technical redesign of its export path. Rather than reimplement the frontend's chart-calculation logic a second time in Python for the export pipeline, I built a standalone Node/Express service that exposed that shared calculation logic as an npm package, consumed by both the React client and the Python-based export pipeline. I prototyped native PowerPoint export in 2 days, then brought on a second engineer to help ship it on the original deadline.",
     },
     technicalCall: {
       title: "One source of truth for chart math, in two runtimes",
-      body: "Duplicating the chart-calculation logic in Python would have meant two implementations drifting apart over time. Exposing the existing JS logic as an npm package consumed by a small Node/Express service let the Python export pipeline call the exact same calculations the client used — a deliberate trade-off of a bit of added latency and a second service to version, in exchange for one source of truth for what a chart's numbers actually meant.",
+      body: "Duplicating the chart-calculation logic in Python would have meant two implementations drifting apart over time. Exposing the existing JS logic as an npm package consumed by a small Node/Express service let the Python export pipeline call the exact same calculations the client used. It was a deliberate trade-off: a bit of added latency and a second service to version, in exchange for one source of truth for what a chart's numbers actually meant.",
     },
     leadershipFraming: {
       team: "Cross-functional delivery team, plus one additional engineer brought on for the PowerPoint export push",
@@ -121,7 +121,7 @@ export const caseStudies: CaseStudy[] = [
     companyBlurb: "Solo-built internal tool for MagicSchool AI's engineering org",
     roleTitle: "Creator & sole engineer",
     dateRange: "2026",
-    hook: "Built the tool that replaced a manual weekly reporting scramble with an automatic org-wide rollup for the VP of Engineering — and the CEO.",
+    hook: "Built the tool that replaced a manual weekly reporting scramble with an automatic org-wide rollup for the VP of Engineering and the CEO.",
     heroStats: [
       { value: "14", label: "squads covered", sublabel: "org-wide" },
       { value: "Solo", label: "built end-to-end", sublabel: "outside any assigned project" },
@@ -131,14 +131,14 @@ export const caseStudies: CaseStudy[] = [
       problem:
         "Every week, the completed work across MagicSchool's roughly 14 engineering squads had to get manually compiled into updates for the VP of Engineering's Monday all-hands and periodic executive briefings. It was a recurring chore for EMs, it got less reliable as the org reorganized repeatedly, and leadership still didn't have a dependable, org-wide view of what had actually shipped.",
       approach:
-        "On my own initiative, outside any assigned project, I built a tool — internally called Hall Monitor — that pulls completed issues from Linear and standup threads from Slack for every squad, has Claude synthesize a per-squad narrative plus an org-wide executive rollup, and posts both to Slack automatically. I layered on a nightly Google Drive and Notion scan that links relevant docs to the right project, so summaries have more context than ticket titles alone, plus a dedicated weekly release-notes generator for the VP of Engineering's Monday all-hands.",
+        "On my own initiative, outside any assigned project, I built a tool, internally called Hall Monitor, that pulls completed issues from Linear and standup threads from Slack for every squad, has Claude synthesize a per-squad narrative plus an org-wide executive rollup, and posts both to Slack automatically. I layered on a nightly Google Drive and Notion scan that links relevant docs to the right project, so summaries have more context than ticket titles alone, plus a dedicated weekly release-notes generator for the VP of Engineering's Monday all-hands.",
     },
     technicalCall: {
       title: "Finding the silent break in a pipeline that looked fine",
-      body: "The fetch step was correctly pulling and grouping completed issues by project, but the render step's prompt to Claude wasn't getting that grouping, because a separate “active projects” query was silently returning nothing. Both queries used the same-looking `team` argument, but Linear's own schema wants different types for each: `issues(filter: { team: { id } })` expects `ID!`, while the `team(id:)` resolver expects `String!`. One query looked fine, the other was quietly broken by a one-character type mismatch. I also replaced a hardcoded per-squad config block in the script with a `squads.json` file, so the squad list can change — which it does, often — without touching code.",
+      body: "The fetch step was correctly pulling and grouping completed issues by project, but the render step's prompt to Claude wasn't getting that grouping, because a separate “active projects” query was silently returning nothing. Both queries used the same-looking `team` argument, but Linear's own schema wants different types for each: `issues(filter: { team: { id } })` expects `ID!`, while the `team(id:)` resolver expects `String!`. One query looked fine, the other was quietly broken by a one-character type mismatch. I also replaced a hardcoded per-squad config block in the script with a `squads.json` file, so the squad list can change (which it does, often) without touching code.",
     },
     leadershipFraming: {
-      team: "Solo — built and maintained outside of any assigned project",
+      team: "Solo, outside of any assigned project",
       scope: "Org-wide engineering reporting: per-squad digests plus an executive rollup, across ~14 squads",
       stakeholders: "Every EM/squad lead who no longer hand-writes a weekly update, the VP of Engineering, and executive leadership",
     },
