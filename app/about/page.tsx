@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Disclosure } from "@/components/Disclosure";
-import { SkillsStrip } from "@/components/SkillsStrip";
 import { FunFacts } from "@/components/FunFacts";
 import { LeadershipPrinciples } from "@/components/LeadershipPrinciples";
 import { originStory } from "@/lib/content/origin-story";
@@ -41,11 +40,6 @@ export default function AboutPage() {
         <div className="mt-4">
           <LeadershipPrinciples principles={leadershipPrinciples} />
         </div>
-      </div>
-
-      <div className="mt-10 flex flex-col gap-8 sm:flex-row sm:gap-16">
-        <SkillsStrip title="Technical" skills={siteConfig.skills.technical} />
-        <SkillsStrip title="Leadership" skills={siteConfig.skills.leadership} />
       </div>
 
       <div className="mt-10">

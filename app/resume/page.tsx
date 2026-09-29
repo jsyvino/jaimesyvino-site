@@ -28,15 +28,15 @@ export default function ResumePage() {
         ones you care about.
       </p>
 
-      <div className="mt-10 flex flex-col gap-8 sm:flex-row sm:gap-16">
-        <SkillsStrip title="Technical" skills={siteConfig.skills.technical} />
-        <SkillsStrip title="Leadership" skills={siteConfig.skills.leadership} />
-      </div>
-
       <div className="mt-10 flex flex-col gap-4">
         {experience.map((section) => (
           <ExperienceSection key={section.slug} section={section} />
         ))}
+      </div>
+
+      <div className="mt-10 flex flex-col gap-8 sm:flex-row sm:gap-16">
+        <SkillsStrip title="Technical" skills={siteConfig.skills.technical} />
+        <SkillsStrip title="Leadership" skills={siteConfig.skills.leadership} />
       </div>
     </div>
   );
