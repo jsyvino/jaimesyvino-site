@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Jaime Syvino",
   pronouns: "she/her",
   tagline: "Experienced Engineering Leader",
-  subLine: "I lead teams, and I still write the code.",
+  subLine: "Velocity and vibes — I own both, and I don't think you get one without the other",
   location: "New Paltz, NY (Remote)",
   email: "JSyvino@gmail.com",
   summary: {

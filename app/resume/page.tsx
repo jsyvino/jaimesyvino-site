@@ -24,8 +24,7 @@ export default function ResumePage() {
         </a>
       </div>
       <p className="mt-4 max-w-xl text-base leading-relaxed text-black/70 dark:text-white/70">
-        The full role-by-role history behind the case studies. Each section is collapsible, so expand the
-        ones you care about.
+        The full role-by-role history
       </p>
 
       <div className="mt-10 flex flex-col gap-4">

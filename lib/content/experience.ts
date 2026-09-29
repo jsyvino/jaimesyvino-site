@@ -23,7 +23,7 @@ export const experience: ExperienceSection[] = [
     roles: [
       {
         title: "Engineering Manager - Enterprise, Chatbot, Internal Tools",
-        dateRange: "Mar 2026 – Present",
+        dateRange: "Mar 2026 – Oct 2026",
         subtitle: "AI-native edtech platform · 7M+ educators",
         bullets: [
           "Led launch of a personalized recommendations engine for 7M+ educators, replacing 4 static tool suggestions with 9 subject-ranked ones, resulting in 23% CTR and 78% click-to-use conversion among new users.",
@@ -104,7 +104,7 @@ export const experience: ExperienceSection[] = [
         ],
       },
       {
-        title: "Software Engineer / Junior Engineer",
+        title: "Software Engineer",
         location: "Chicago, IL",
         dateRange: "Jul 2018 – Oct 2020",
         bullets: [
@@ -138,10 +138,14 @@ export const experience: ExperienceSection[] = [
         location: "Gurnee, IL",
         dateRange: "Feb 2015 – Jul 2016",
         bullets: [
-          "Developed and implemented an automated production performance incident reporting process.",
+          "Acting Production Manager from November 2015 to July 2016.",
+          "Completely revamped and updated LOTO policy to improve safety and efficiency.",
+          "Developed and implemented a production performance incident reporting process for identifying and investigating production incidents to determine root cause and identify preventative actions.",
           "Project manager for multiple capital projects with budgets up to $125K.",
+          "Oversaw and helped guide monthly LEAN events and implemented identified suggestions.",
           "Direct manager of Production Cooperative Engineers.",
-          "Responsible for programming and troubleshooting of the Foxboro distributed control system and Allen Bradley programmable logic computers.",
+          "Created a cycle time solver tool to determine ideal planned cycle time to improve batch scheduling.",
+          "Responsible for troubleshooting Foxboro DCS and Allen Bradley PLC systems.",
         ],
       },
       {
@@ -153,6 +157,7 @@ export const experience: ExperienceSection[] = [
           "Managed an operation that blends and ships over 15MM gallons of finished product annually with zero quality incidents in 2014.",
           "Designed and executed installation and commissioning of a mass load-out custody transfer system to decrease truck loading time by 40%.",
           "Responsible for identification and replacement of a control valve bottleneck, allowing a 15% reduction in blend time.",
+          "Led development and implementation of a formal department training program.",
         ],
       },
       {
@@ -197,8 +202,13 @@ export const experience: ExperienceSection[] = [
         location: "Anacortes, WA",
         dateRange: "Aug 2008 – Jul 2010",
         bullets: [
-          "Eliminated environmental SO2 emission exceedances during startup by developing and implementing an alternate catalyst activation process procedure.",
-          "Conducted cost/benefit analyses to justify performing regeneration processes, and coordinated and supervised execution of the procedures.",
+          "Developed and implemented an alternate sulfur recovery unit presulfiding process to eliminate SO2 release during startup, later applied to other unit turnarounds throughout the country.",
+          "Ensured safe and efficient operation of sulfur recovery, amine regeneration, wastewater stripper, and alkylation units in collaboration with unit operation teams.",
+          "Improved and standardized unit proactive monitoring techniques.",
+          "Performed in-depth analysis of process incidents, determined root cause, and implemented preventative barriers in response to incident investigations.",
+          "Developed a sour water curtailment plan to be utilized in plant emergencies.",
+          "Acted as lead process support for multiple unit turnarounds, including shutdown and startup.",
+          "Coordinated and led an amine reclamation project for the plant DEA system (a month-long process).",
         ],
       },
     ],

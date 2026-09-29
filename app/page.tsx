@@ -13,7 +13,7 @@ export default function Home() {
 
       <section className="py-12">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-black/45 dark:text-white/45">
-          Selected work
+          Highlighted Work
         </h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {sortedCaseStudies.map((caseStudy) => (

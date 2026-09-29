@@ -35,9 +35,6 @@ export function Footer() {
             Resume
           </Link>
         </div>
-        <p className="max-w-md text-xs text-black/35 dark:text-white/35">
-          Most of my production work lives in private company repos. The case studies above are the real proof of work.
-        </p>
       </div>
     </footer>
   );

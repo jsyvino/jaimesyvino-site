@@ -21,15 +21,20 @@ export default function AboutPage() {
       <div className="mt-6 flex flex-col gap-4 text-base leading-relaxed text-black/80 dark:text-white/80">
         <p>{siteConfig.summary.blurb}</p>
         <p>
-          Across MagicSchool AI, HowGood, and KnowledgeHound, the pattern has stayed the same: find the
-          highest-leverage problem, build the smallest thing that actually solves it, measure whether it
-          worked, and bring the team along the whole way. I care about being decisive without being
-          territorial. A squad works best when the right call gets made quickly and everyone understands why.
+          I&apos;m an engineering leader passionate about finding clean, simple solutions to complex problems. I’ve 
+          spent the last several years building and scaling product engineering teams across AI-native edtech, 
+          sustainability data, and enterprise SaaS.
         </p>
         <p>
-          I&apos;m equally at home leading a team&apos;s roadmap and hiring, and being the person who opens
-          Datadog to find out why a page is slow. The case studies on the home page show both sides of that on
-          purpose.
+          I’m a strong believer in finding the highest-leverage problem, building the simplest thing that solves 
+          it, and measuring whether it actually made a difference. I care deeply about the customer and get 
+          excited about making products—and people’s lives—meaningfully easier. I’m equally comfortable setting 
+          a team’s direction and roadmap as I am opening Datadog to figure out why something is slow and shipping the fix.
+        </p>
+        <p>
+          As a leader, I focus on building high-trust teams where people are willing to teach and learn from each other, 
+          raise problems early, and hold one another accountable. I aim to be decisive without being territorial, 
+          create clarity in ambiguity, and build a culture where people can do their best work while continuing to grow.
         </p>
       </div>
 
