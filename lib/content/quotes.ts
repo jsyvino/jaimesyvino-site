@@ -11,6 +11,11 @@ export const quotes: Quote[] = [
   },
   {
     quote:
+      "Jaime embodies a lot of things, but mostly she obviously embodies 'best team ever,' 'relationships,' and 'candor' in such a powerful way. She really cares deeply about me, my growth, and what I care about, and she's always willing to have these honest, direct conversations. It's not just in service of me, because she curates a culture that is so rare on engineering teams, and that culture inspires people to work better, work with more focus, and work with more clarity, and I really appreciate it. She has brought out the best in me. I feel a lot less stressed with her as my manager. I just really appreciate you, Jaime, and I wanted the whole world to hear.",
+    role: "Direct Report",
+  },
+  {
+    quote:
       "I think the world of you and so very appreciate your willingness to push hard and say your mind. Your instincts are so sharp, and when you push and learn new information you've always been willing to update your beliefs. That is the sign of a true leader, and one who values decision intelligence and growth. Never lose that. It will take you to amazing places.",
     role: "CTO",
   },
