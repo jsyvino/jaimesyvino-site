@@ -18,14 +18,12 @@ export function Nav() {
               {item.label}
             </Link>
           ))}
-          <a
-            href={siteConfig.links.resume}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/resume"
             className="rounded-full border border-black/15 px-4 py-1.5 text-sm font-medium transition hover:border-black/40 dark:border-white/20 dark:hover:border-white/50"
           >
             Resume
-          </a>
+          </Link>
         </div>
       </nav>
     </header>

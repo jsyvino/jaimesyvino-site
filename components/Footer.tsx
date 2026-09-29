@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { siteConfig } from "@/lib/content/site-config";
 
 export function Footer() {
@@ -30,14 +31,9 @@ export function Footer() {
           >
             Code
           </a>
-          <a
-            className="underline-offset-4 hover:underline"
-            href={siteConfig.links.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link className="underline-offset-4 hover:underline" href="/resume">
             Resume
-          </a>
+          </Link>
         </div>
         <p className="max-w-md text-xs text-black/35 dark:text-white/35">
           Most of my production work lives in private company repos — the case studies above are the real proof of work.

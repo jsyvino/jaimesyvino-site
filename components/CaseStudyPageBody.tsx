@@ -91,9 +91,9 @@ export function CaseStudyPageBody({ caseStudy }: { caseStudy: CaseStudy }) {
       </div>
 
       <div className="mt-14 flex flex-wrap items-center gap-4 border-t border-black/5 pt-8 text-sm dark:border-white/10">
-        <a href={siteConfig.links.resume} target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline">
-          Download resume
-        </a>
+        <Link href="/resume" className="underline-offset-4 hover:underline">
+          Full résumé
+        </Link>
         <a href={`mailto:${siteConfig.email}`} className="underline-offset-4 hover:underline">
           Get in touch
         </a>
