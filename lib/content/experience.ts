@@ -171,6 +171,36 @@ export const experience: ExperienceSection[] = [
           "Led commissioning of a newly installed $15MM blend plant with brand new programmable logic computers and Wonderware human-machine interface.",
         ],
       },
+      {
+        title: "Process Engineer",
+        company: "Sunoco",
+        location: "Marcus Hook, PA",
+        dateRange: "Oct 2011 – Mar 2012",
+        bullets: [
+          "Ensured safe and efficient operation of two processing units in collaboration with unit operation teams until the refinery was shut down in December 2011.",
+          "Improved catalyst performance, health, and longevity through creation and implementation of unit monitoring tools.",
+        ],
+      },
+      {
+        title: "High School Chemistry Teacher",
+        company: "NYC Teaching Fellows · Henry Street School",
+        location: "New York, NY",
+        dateRange: "Summer 2010 – Summer 2011",
+        bullets: [
+          "Led student achievement data team in implementation of a data analysis process, effectively cutting processing time by a third.",
+          "Developed unique study materials and lesson plans to facilitate student learning.",
+        ],
+      },
+      {
+        title: "Process Engineer",
+        company: "Shell",
+        location: "Anacortes, WA",
+        dateRange: "Aug 2008 – Jul 2010",
+        bullets: [
+          "Eliminated environmental SO2 emission exceedances during startup by developing and implementing an alternate catalyst activation process procedure.",
+          "Conducted cost/benefit analyses to justify performing regeneration processes, and coordinated and supervised execution of the procedures.",
+        ],
+      },
     ],
   },
 ];
