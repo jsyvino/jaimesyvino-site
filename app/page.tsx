@@ -25,7 +25,12 @@ export default function Home() {
       </section>
 
       <section className="py-12">
-        <QuoteCarousel quotes={quotes} />
+        <h2 className="text-center text-sm font-semibold uppercase tracking-wide text-black/45 dark:text-white/45">
+          What Coworkers Say
+        </h2>
+        <div className="mt-4">
+          <QuoteCarousel quotes={quotes} />
+        </div>
       </section>
 
       <section className="flex flex-col gap-8 py-12 sm:flex-row sm:gap-16">
