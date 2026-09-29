@@ -24,4 +24,8 @@ export const funFacts: FunFact[] = [
     text: "I rode my bike from San Francisco to LA",
     image: { src: "/images/about/fun-facts/bike.jpg", alt: "Jaime and a friend biking along the California coastline" },
   },
+  {
+    text: "I have 3 perfect little monsters",
+    image: { src: "/images/about/fun-facts/kids.jpg", alt: "Three kids sitting on a rock overlooking a mountain vista on a hike" },
+  },
 ];
