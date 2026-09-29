@@ -1,7 +1,9 @@
 import { Hero } from "@/components/Hero";
 import { CaseStudyCard } from "@/components/CaseStudyCard";
+import { QuoteCarousel } from "@/components/QuoteCarousel";
 import { SkillsStrip } from "@/components/SkillsStrip";
 import { caseStudies } from "@/lib/content/case-studies";
+import { quotes } from "@/lib/content/quotes";
 import { siteConfig } from "@/lib/content/site-config";
 
 export default function Home() {
@@ -20,6 +22,10 @@ export default function Home() {
             <CaseStudyCard key={caseStudy.slug} caseStudy={caseStudy} />
           ))}
         </div>
+      </section>
+
+      <section className="py-12">
+        <QuoteCarousel quotes={quotes} />
       </section>
 
       <section className="flex flex-col gap-8 py-12 sm:flex-row sm:gap-16">
